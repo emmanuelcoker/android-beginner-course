@@ -13,6 +13,6 @@ class MainApplication  : Application(){
 
     companion object{
         var instance : MainApplication? = null
-            private set
+        private set
     }
 }
