@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="card_height">72dp</dimen>
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">16dp</dimen>
+</resources>
