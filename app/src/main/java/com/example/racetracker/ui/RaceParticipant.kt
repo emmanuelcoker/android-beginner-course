@@ -18,6 +18,7 @@ package com.example.racetracker.ui
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import kotlinx.coroutines.delay
 
 /**
  * This class represents a state holder for race participant.
@@ -32,6 +33,13 @@ class RaceParticipant(
     init {
         require(maxProgress > 0) { "maxProgress=$maxProgress; must be > 0" }
         require(progressIncrement > 0) { "progressIncrement=$progressIncrement; must be > 0" }
+    }
+
+    suspend fun run() {
+        while(currentProgress < maxProgress) {
+            delay(progressDelayMillis)
+            currentProgress += progressIncrement
+        }
     }
 
     /**
